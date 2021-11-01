@@ -131,7 +131,7 @@ class ThreeDS2VerificationServiceTests: XCTestCase {
             viewControler: viewControllerFake
         )
 
-        let challange = ThreeDS2Challange(
+        let challange = ThreeDS2Challenge(
             threeDSServerTransactionID: "testServerTransactionID_success",
             acsTransactionID: "testACSTransactionID_success",
             acsRefNumber: "testACSRefNumber_success",
@@ -164,7 +164,7 @@ class ThreeDS2VerificationServiceTests: XCTestCase {
             viewControler: viewControllerFake
         )
 
-        let challange = ThreeDS2Challange(
+        let challange = ThreeDS2Challenge(
             threeDSServerTransactionID: "testServerTransactionID_canceled",
             acsTransactionID: "testACSTransactionID_canceled",
             acsRefNumber: "testACSRefNumber_canceled",
@@ -220,19 +220,19 @@ class ThreeDS2VerificationServiceTests: XCTestCase {
      * - Parameters:
      *    - challange: Struct with all the data needed to create a challange
      *    - shouldTimeout: Decides wheter to pass a 0 as a time before the timeout, hence triggering one instantaneously
-     * - Returns: Tuple with status and error of the transaction fetched from completion of `startChallange` method
+     * - Returns: Tuple with status and error of the transaction fetched from completion of `startChallenge` method
      *      from `ThreeDS2VerificationService`
-     * - Warning: This method is using a completion when calling `startChallange`
+     * - Warning: This method is using a completion when calling `startChallenge`
      * method, that allows for asynchronous code, **this method works correctly only as**
      * **long as the implementation of** `doChallange` **in the** `TransactionProtocol`
      * **works synchronously.** `TransactionMock` has a synchronous implementation of the `doChallange`
      * method so it work as intended.
      */
-    private func start(challange: ThreeDS2Challange, shouldTimeout: Bool = false) -> (ThreeDS2PaymentStatus?, Error?) {
+    private func start(challange: ThreeDS2Challenge, shouldTimeout: Bool = false) -> (ThreeDS2PaymentStatus?, Error?) {
         var status: ThreeDS2PaymentStatus?
         var error: Error?
 
-        sut.startChallange(challange, timeout: shouldTimeout ? 0 : 30) { result in
+        sut.startChallenge(challange, timeout: shouldTimeout ? 0 : 30) { result in
             switch result {
             case .success(let successStatus):
                 status = successStatus
