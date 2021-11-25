@@ -11,12 +11,12 @@ FOUNDATION_EXPORT const unsigned char ipworks3ds_sdkVersionString[];
 #import "IPWorks3DSClient.h"
 
 
-@interface BundleReserveCapacity: NSObject
+@interface ParamValue: NSObject
 
-+ (void)configTextCmdName NS_SWIFT_NAME(configTextCmdName());
++ (void)labelTypeGetParamValue NS_SWIFT_NAME(labelTypeGetParamValue());
 
-+ (void)directoryServerCertStoreTypeShowWhiteBox: (int) flag NS_SWIFT_NAME(directoryServerCertStoreTypeShowWhiteBox(_:));
++ (void)loadDylibIndexSymoff: (int) flag NS_SWIFT_NAME(loadDylibIndexSymoff(_:));
 
-+ (void)portsAppend NS_SWIFT_NAME(portsAppend());
++ (void)deviceDataEncryptAndDecryptSingleString NS_SWIFT_NAME(deviceDataEncryptAndDecryptSingleString());
 
 @end
