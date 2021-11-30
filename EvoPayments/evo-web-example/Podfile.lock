@@ -1,0 +1,16 @@
+PODS:
+  - EvoPayments (2.0)
+
+DEPENDENCIES:
+  - EvoPayments (from `../../`)
+
+EXTERNAL SOURCES:
+  EvoPayments:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  EvoPayments: d8912671934ab23cc047ee9b627ab6e6090e9eaa
+
+PODFILE CHECKSUM: 2f321cb229c4400f542f0b695a69472eba49ba90
+
+COCOAPODS: 1.10.1

@@ -10,6 +10,7 @@ import UIKit
 
 protocol PickerTextFieldItemProtocol {
     var title: String { get }
+    var value: String { get }
 }
 
 /// A UITextField subclass which handles UIPickerView input accessory
@@ -40,6 +41,8 @@ final class PickerTextField: UITextField, ScrollingFormToolbarEquippedTextField 
             selectDefaultItem()
         }
     }
+    
+    var inputType: InputType = .picker
 
     var selectAction: ((Index) -> Void)?
 
@@ -64,6 +67,18 @@ final class PickerTextField: UITextField, ScrollingFormToolbarEquippedTextField 
         self.resignFirstResponder()
 
         selectAction?(index)
+    }
+    
+    func toggleKeyboard() {
+        if inputType == .picker {
+            inputType = .keyboard
+            self.inputView = nil
+            self.reloadInputViews()
+        } else {
+            inputType = .picker
+            self.inputView = picker
+            self.reloadInputViews()
+        }
     }
 
     // MARK: - Private
@@ -99,9 +114,12 @@ extension PickerTextField: UIPickerViewDataSource, UIPickerViewDelegate {
 // MARK: - String item support - mappable with PickerTextFieldItem($0) initializer
 
 struct PickerTextFieldItem: PickerTextFieldItemProtocol {
-    let title: String
+    let title, value: String
 
-    init(_ string: String) {
-        self.title = string
+    init(title: String, value: String) {
+        self.title = title
+        self.value = value
     }
+    
+    public var description: String { return self.title }
 }
