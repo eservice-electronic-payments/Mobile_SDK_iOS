@@ -16,46 +16,16 @@ Please note that the call from the Merchant Server to the IPG Gateway API for ob
 
 ## Integrating the SDK with the Project 
 
-1. [Install CocoaPods 1.10 or above](https://guides.cocoapods.org/using/getting-started.html)
-
-2. Make sure your version is at least 1.10❗️
-
-    ```bash
-    $ pod --version
+1. Clone repository
+    ```
+    git clone https://github.com/eservice-electronic-payments/Mobile_SDK_IOS_UAT.git
     ```
 
-3. Create a podfile in your project folder
+2. Open your iOS project from Xcode. Drag EvoPayments.xcodeproj into Xcode. 
 
-    ```bash
-    $ pod init
-    ```
+3. Selected Evopayments scheme and build framework.
 
-4. Add new pod to your `Podfile`
-
-    ```ruby
-    pod 'EvoPayments', :git => 'https://github.com/eservice-electronic-payments/iOS_SDK'
-    ```
-    So your `Podfile` looks as in the example:
-
-    ```ruby
-    # Uncomment the next line to define a global platform for your project
-    # platform :ios, '9.0'
-    
-    target 'ProjectName' do
-      # Comment the next line if you don't want to use dynamic frameworks
-      use_frameworks!
-    
-      # Pods for ProjectName
-      pod 'EvoPayments', :git => 'https://github.com/eservice-electronic-payments/iOS_SDK'
-    end
-    
-    ```
-
-5. Install pods in your project folder:
-
-    ```bash
-    $ pod install
-    ```
+4. Import EvoPayments start to using SDK.
 
 ## Using the SDK
 
