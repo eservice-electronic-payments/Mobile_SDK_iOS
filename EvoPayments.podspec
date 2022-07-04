@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   spec.author             = "Intelligent Payments Ltd."
   spec.platform     = :ios, "10.0"
   spec.source       = { :git => "https://github.com/eservice-electronic-payments/iOS_SDK", :tag => "2.0" }
-  spec.source_files  = "EvoPayments/EvoPayments/Sources/**/*.swift"
+  spec.source_files  = "EvoPayments/EvoPayments"
   spec.vendored_frameworks = "EvoPayments/EvoPayments/Sources/Libraries/ipworks3ds_sdk.xcframework"
   spec.swift_version = "5.0"
   spec.resources = 'Info.plist'
