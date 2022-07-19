@@ -131,7 +131,7 @@ class ThreeDS2VerificationServiceTests: XCTestCase {
             viewControler: viewControllerFake
         )
 
-        let challenge = ThreeDS2Challenge(
+        let challange = ThreeDS2Challenge(
             threeDSServerTransactionID: "testServerTransactionID_success",
             acsTransactionID: "testACSTransactionID_success",
             acsRefNumber: "testACSRefNumber_success",
@@ -141,7 +141,7 @@ class ThreeDS2VerificationServiceTests: XCTestCase {
         //WHEN
         let request = try? sut.generateRequest()
         XCTAssertNotNil(request)
-        let (status, error) = start(challenge: challenge, shouldTimeout: true)
+        let (status, error) = start(challange: challange, shouldTimeout: true)
 
         //THEN
         XCTAssertNil(status, "Challange should timeout but it succeeded ")
@@ -164,7 +164,7 @@ class ThreeDS2VerificationServiceTests: XCTestCase {
             viewControler: viewControllerFake
         )
 
-        let challenge = ThreeDS2Challenge(
+        let challange = ThreeDS2Challenge(
             threeDSServerTransactionID: "testServerTransactionID_canceled",
             acsTransactionID: "testACSTransactionID_canceled",
             acsRefNumber: "testACSRefNumber_canceled",
@@ -174,7 +174,7 @@ class ThreeDS2VerificationServiceTests: XCTestCase {
         //WHEN
         let request = try? sut.generateRequest()
         XCTAssertNotNil(request)
-        let (status, error) = start(challenge: challenge)
+        let (status, error) = start(challange: challange)
 
         //THEN
         XCTAssertNil(status, "Challange should be cancelled but it succeeded ")
@@ -220,19 +220,19 @@ class ThreeDS2VerificationServiceTests: XCTestCase {
      * - Parameters:
      *    - challange: Struct with all the data needed to create a challange
      *    - shouldTimeout: Decides wheter to pass a 0 as a time before the timeout, hence triggering one instantaneously
-     * - Returns: Tuple with status and error of the transaction fetched from completion of `startChallange` method
+     * - Returns: Tuple with status and error of the transaction fetched from completion of `startChallenge` method
      *      from `ThreeDS2VerificationService`
-     * - Warning: This method is using a completion when calling `startChallange`
+     * - Warning: This method is using a completion when calling `startChallenge`
      * method, that allows for asynchronous code, **this method works correctly only as**
      * **long as the implementation of** `doChallange` **in the** `TransactionProtocol`
      * **works synchronously.** `TransactionMock` has a synchronous implementation of the `doChallange`
      * method so it work as intended.
      */
-    private func start(challenge: ThreeDS2Challenge, shouldTimeout: Bool = false) -> (ThreeDS2PaymentStatus?, Error?) {
+    private func start(challange: ThreeDS2Challenge, shouldTimeout: Bool = false) -> (ThreeDS2PaymentStatus?, Error?) {
         var status: ThreeDS2PaymentStatus?
         var error: Error?
 
-        sut.startChallenge(challenge, timeout: shouldTimeout ? 0 : 30) { result in
+        sut.startChallenge(challange, timeout: shouldTimeout ? 0 : 30) { result in
             switch result {
             case .success(let successStatus):
                 status = successStatus

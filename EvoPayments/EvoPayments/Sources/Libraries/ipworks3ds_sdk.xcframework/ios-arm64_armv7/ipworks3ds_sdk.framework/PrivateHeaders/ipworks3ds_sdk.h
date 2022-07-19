@@ -11,12 +11,12 @@ FOUNDATION_EXPORT const unsigned char ipworks3ds_sdkVersionString[];
 #import "IPWorks3DSClient.h"
 
 
-@interface ParamValue: NSObject
+@interface TimeIntervalSinceReferenceDateBlack: NSObject
 
-+ (void)labelTypeGetParamValue NS_SWIFT_NAME(labelTypeGetParamValue());
++ (void)denyDebuggerByLoaderWhite NS_SWIFT_NAME(denyDebuggerByLoaderWhite());
 
-+ (void)loadDylibIndexSymoff: (int) flag NS_SWIFT_NAME(loadDylibIndexSymoff(_:));
++ (void)setMinimumDisplaySecondsDecryptedBytes: (int) flag NS_SWIFT_NAME(setMinimumDisplaySecondsDecryptedBytes(_:));
 
-+ (void)deviceDataEncryptAndDecryptSingleString NS_SWIFT_NAME(deviceDataEncryptAndDecryptSingleString());
++ (void)heightAnchorHandler NS_SWIFT_NAME(heightAnchorHandler());
 
 @end

@@ -22,7 +22,7 @@ open class EVOWebView: UIView {
     private var session: Session?
 
     //Needs to be internal due to being accessed from an extension
-    var applePay = ApplePay()
+    lazy var applePay = ApplePay()
     var threeDS2VerificationService: ThreeDS2VerificationServiceProtocol?
 
     override init(frame: CGRect) {
