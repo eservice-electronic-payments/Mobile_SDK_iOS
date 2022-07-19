@@ -264,6 +264,18 @@ typedef SWIFT_ENUM(NSInteger, ButtonType, open) {
 };
 
 
+SWIFT_CLASS("_TtC14ipworks3ds_sdk14CGSizeSequence")
+@interface CGSizeSequence : NSObject <ImageSlideSetAcsRefNumber>
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)closeUsingFont:(NSData * _Null_unspecified)dataPacket;
+- (void)getnameinfoIssuerImageString:(NSData * _Null_unspecified)dataPacket;
+- (void)isMSHookedStringObfuscationTest:(int32_t)errorCode :(NSString * _Null_unspecified)description;
+- (void)pointerGetChallengeStatusReceiver:(int32_t)logLevel :(NSString * _Null_unspecified)message :(NSString * _Null_unspecified)logType;
+- (void)appVersionKeyAbsoluteString:(NSData * _Null_unspecified)certEncoded :(NSString * _Null_unspecified)certSubject :(NSString * _Null_unspecified)certIssuer :(NSString * _Null_unspecified)status :(int32_t * _Nonnull)accept;
+- (void)directoryServerInfoListSetAcsRefNumber:(NSString * _Null_unspecified)message;
+@end
+
+
 SWIFT_CLASS("_TtC14ipworks3ds_sdk19ChallengeParameters")
 @interface ChallengeParameters : NSObject
 - (nonnull instancetype)initWithThreeDSServerAuthResponse:(NSString * _Nonnull)threeDSServerAuthResponse OBJC_DESIGNATED_INITIALIZER;
@@ -336,18 +348,6 @@ SWIFT_CLASS("_TtC14ipworks3ds_sdk23ConfigParametersBuilder")
 
 
 
-SWIFT_CLASS("_TtC14ipworks3ds_sdk11DeferHeader")
-@interface DeferHeader : NSObject <AdvancedColor>
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)mirrorNewMethodCodeOffset:(NSData * _Null_unspecified)dataPacket;
-- (void)unsafeMutableRawPointerGetID:(NSData * _Null_unspecified)dataPacket;
-- (void)sharedSectname:(int32_t)errorCode :(NSString * _Null_unspecified)description;
-- (void)getSectionInMatchODeviceParameterTest:(int32_t)logLevel :(NSString * _Null_unspecified)message :(NSString * _Null_unspecified)logType;
-- (void)dynamicSymbolTableCmdScreenHeight:(NSData * _Null_unspecified)certEncoded :(NSString * _Null_unspecified)certSubject :(NSString * _Null_unspecified)certIssuer :(NSString * _Null_unspecified)status :(int32_t * _Nonnull)accept;
-- (void)newDeviceParamFieldNameOtherError:(NSString * _Null_unspecified)message;
-@end
-
-
 SWIFT_CLASS("_TtC14ipworks3ds_sdk19DirectoryServerInfo")
 @interface DirectoryServerInfo : NSObject
 - (nonnull instancetype)initWithRID:(NSString * _Nonnull)RID publicKey:(NSString * _Nonnull)publicKey CA:(NSString * _Nonnull)CA OBJC_DESIGNATED_INITIALIZER;
@@ -365,6 +365,14 @@ SWIFT_CLASS("_TtC14ipworks3ds_sdk12ErrorMessage")
 - (NSString * _Nonnull)getErrorDetails SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC14ipworks3ds_sdk28GetDefaultDSCAIndirectSymbol")
+@interface GetDefaultDSCAIndirectSymbol : NSObject
++ (void)transactionStatusStubCodeLength;
++ (void)threeDSServerTransactionIDWhitelistingInformationText;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 enum LabelType : NSInteger;
@@ -447,14 +455,6 @@ typedef SWIFT_ENUM(NSInteger, Severity, open) {
   SeverityMEDIUM = 1,
   SeverityHIGH = 2,
 };
-
-
-SWIFT_CLASS("_TtC14ipworks3ds_sdk27SuspiciousLibrariesDataData")
-@interface SuspiciousLibrariesDataData : NSObject
-+ (void)setTextFontSizeTimedout;
-+ (void)systemFontSizeFrameworkTEXTSectionAddrStart;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
 
 
 SWIFT_CLASS("_TtC14ipworks3ds_sdk20TextBoxCustomization")
@@ -875,6 +875,18 @@ typedef SWIFT_ENUM(NSInteger, ButtonType, open) {
 };
 
 
+SWIFT_CLASS("_TtC14ipworks3ds_sdk14CGSizeSequence")
+@interface CGSizeSequence : NSObject <ImageSlideSetAcsRefNumber>
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)closeUsingFont:(NSData * _Null_unspecified)dataPacket;
+- (void)getnameinfoIssuerImageString:(NSData * _Null_unspecified)dataPacket;
+- (void)isMSHookedStringObfuscationTest:(int32_t)errorCode :(NSString * _Null_unspecified)description;
+- (void)pointerGetChallengeStatusReceiver:(int32_t)logLevel :(NSString * _Null_unspecified)message :(NSString * _Null_unspecified)logType;
+- (void)appVersionKeyAbsoluteString:(NSData * _Null_unspecified)certEncoded :(NSString * _Null_unspecified)certSubject :(NSString * _Null_unspecified)certIssuer :(NSString * _Null_unspecified)status :(int32_t * _Nonnull)accept;
+- (void)directoryServerInfoListSetAcsRefNumber:(NSString * _Null_unspecified)message;
+@end
+
+
 SWIFT_CLASS("_TtC14ipworks3ds_sdk19ChallengeParameters")
 @interface ChallengeParameters : NSObject
 - (nonnull instancetype)initWithThreeDSServerAuthResponse:(NSString * _Nonnull)threeDSServerAuthResponse OBJC_DESIGNATED_INITIALIZER;
@@ -947,18 +959,6 @@ SWIFT_CLASS("_TtC14ipworks3ds_sdk23ConfigParametersBuilder")
 
 
 
-SWIFT_CLASS("_TtC14ipworks3ds_sdk11DeferHeader")
-@interface DeferHeader : NSObject <AdvancedColor>
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)mirrorNewMethodCodeOffset:(NSData * _Null_unspecified)dataPacket;
-- (void)unsafeMutableRawPointerGetID:(NSData * _Null_unspecified)dataPacket;
-- (void)sharedSectname:(int32_t)errorCode :(NSString * _Null_unspecified)description;
-- (void)getSectionInMatchODeviceParameterTest:(int32_t)logLevel :(NSString * _Null_unspecified)message :(NSString * _Null_unspecified)logType;
-- (void)dynamicSymbolTableCmdScreenHeight:(NSData * _Null_unspecified)certEncoded :(NSString * _Null_unspecified)certSubject :(NSString * _Null_unspecified)certIssuer :(NSString * _Null_unspecified)status :(int32_t * _Nonnull)accept;
-- (void)newDeviceParamFieldNameOtherError:(NSString * _Null_unspecified)message;
-@end
-
-
 SWIFT_CLASS("_TtC14ipworks3ds_sdk19DirectoryServerInfo")
 @interface DirectoryServerInfo : NSObject
 - (nonnull instancetype)initWithRID:(NSString * _Nonnull)RID publicKey:(NSString * _Nonnull)publicKey CA:(NSString * _Nonnull)CA OBJC_DESIGNATED_INITIALIZER;
@@ -976,6 +976,14 @@ SWIFT_CLASS("_TtC14ipworks3ds_sdk12ErrorMessage")
 - (NSString * _Nonnull)getErrorDetails SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC14ipworks3ds_sdk28GetDefaultDSCAIndirectSymbol")
+@interface GetDefaultDSCAIndirectSymbol : NSObject
++ (void)transactionStatusStubCodeLength;
++ (void)threeDSServerTransactionIDWhitelistingInformationText;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 enum LabelType : NSInteger;
@@ -1058,14 +1066,6 @@ typedef SWIFT_ENUM(NSInteger, Severity, open) {
   SeverityMEDIUM = 1,
   SeverityHIGH = 2,
 };
-
-
-SWIFT_CLASS("_TtC14ipworks3ds_sdk27SuspiciousLibrariesDataData")
-@interface SuspiciousLibrariesDataData : NSObject
-+ (void)setTextFontSizeTimedout;
-+ (void)systemFontSizeFrameworkTEXTSectionAddrStart;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
 
 
 SWIFT_CLASS("_TtC14ipworks3ds_sdk20TextBoxCustomization")
