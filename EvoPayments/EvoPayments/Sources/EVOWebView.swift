@@ -337,6 +337,9 @@ extension EVOWebView: WKScriptMessageHandler {
 
     private func handleChallengeError(_ error: Error) {
         dLog("Error with a challenge: \(error)")
+        let payload = ThreeDS2PaymentStatus(transactionID: "", status: "", errorCode: "", errorDescription: "", errorDetails: "", errorMessage: "")
+        finalizePayment(paymentStatus: payload)
+        
         let threeDS2Error = error as? ThreeDS2Error ?? .unknown(error)
         let paymentInfo = threeDS2Error.paymentInfo
         handleEventType(paymentInfo.eventType)
