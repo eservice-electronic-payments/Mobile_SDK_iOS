@@ -21,7 +21,7 @@ Pod::Spec.new do |spec|
       'secure.eservice.com',
       'myriadpayments.com',
       'evopaymentgateway.com',
-      'boipapaymentgateway.com'
+      'boipapaymentgateway.com',
       'intelligent-payments.com',
       'universalpay.es',
       'monetaplatebnisluzby.cz',
