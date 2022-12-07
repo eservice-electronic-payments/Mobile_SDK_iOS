@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.swift_version = "5.0"
   spec.info_plist = {
     'WKAppBoundDomains' => [
-      '0' => 'secure.eservice.com'
+      'secure.eservice.com'
       # 1 => "cardpayaa.com"
       # 2 => "propayportal.com"
       # 3 => "evomexico.mx"
