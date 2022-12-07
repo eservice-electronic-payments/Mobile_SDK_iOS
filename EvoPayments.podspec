@@ -21,11 +21,11 @@ Pod::Spec.new do |spec|
       'myriadpayments.com',
       'evopaymentgateway.com',
       'boipapaymentgateway.com'
-      # 'intelligent-payments.com'
-      # 'universalpay.es'
-      # 'monetaplatebnisluzby.cz'
-      # 'evomexico.mx'
-      # 'evosnap.com'
+      'intelligent-payments.com',
+      'universalpay.es',
+      'monetaplatebnisluzby.cz',
+      'evomexico.mx',
+      'evosnap.com'
     ]
   }
 
