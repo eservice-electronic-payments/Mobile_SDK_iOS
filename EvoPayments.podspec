@@ -18,11 +18,14 @@ Pod::Spec.new do |spec|
   spec.swift_version = "5.0"
   spec.info_plist = {
     'WKAppBoundDomains' => [
-      'secure.eservice.com'
-      # 1 => "cardpayaa.com"
-      # 2 => "propayportal.com"
-      # 3 => "evomexico.mx"
-      # 4 => "universalpay.es"
+      'myriadpayments.com'
+      'evopaymentgateway.com'
+      'boipapaymentgateway.com'
+      'intelligent-payments.com'
+      'universalpay.es'
+      'monetaplatebnisluzby.cz'
+      'evomexico.mx'
+      'evosnap.com'
     ]
   }
 
