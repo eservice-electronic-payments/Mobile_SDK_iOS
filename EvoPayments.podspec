@@ -17,8 +17,13 @@ Pod::Spec.new do |spec|
   spec.vendored_frameworks = "EvoPayments/EvoPayments/Sources/Libraries/ipworks3ds_sdk.xcframework"
   spec.swift_version = "5.0"
   spec.info_plist = {
-    'abc' => '11111111'
+    'WKAppBoundDomains' => [
+      0 => "secure.eservice.com"
+      1 => "cardpayaa.com"
+      2 => "propayportal.com"
+      3 => "evomexico.mx"
+      4 => "universalpay.es"
+    ]
   }
-
 
 end
