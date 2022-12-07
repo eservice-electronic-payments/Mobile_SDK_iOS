@@ -18,6 +18,7 @@ Pod::Spec.new do |spec|
   spec.swift_version = "5.0"
   spec.info_plist = {
     'WKAppBoundDomains' => [
+      'secure.eservice.com',
       'myriadpayments.com',
       'evopaymentgateway.com',
       'boipapaymentgateway.com'
